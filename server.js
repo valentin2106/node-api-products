@@ -13,4 +13,4 @@ require('./src/models/Products')
 
 app.use('/api', require('./src/routes') )
 
-app.listen(3001)
+app.listen(process.env.Port || 3001)
