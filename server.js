@@ -4,7 +4,8 @@ const mongoose = require ('mongoose')
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+
+app.use(cors('Acess-Control-Allow-Origin','*'))
 
 mongoose.connect(
 'mongodb+srv://valentin:UfautxdDURtxObLa@cluster0.6shyb.mongodb.net/test?retryWrites=true&w=majority' ,{useUnifiedTopology: true, useNewUrlParser:true})
